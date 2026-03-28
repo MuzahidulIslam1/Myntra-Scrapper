@@ -4,7 +4,7 @@ setup(
     name="scrapper",
     version="0.0.1",
     author="pwskills",
-    author_email="hrisikesh.neogi@pw.live",
+    author_email="muzahidul.islam@pw.live",
     packages=find_packages(),
     install_requires=[],
 )
