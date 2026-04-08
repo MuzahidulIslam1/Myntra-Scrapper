@@ -31,6 +31,23 @@ source activate ./env
 3. Replace the environment variable in `.env` file
     Add the MongoDB environment variable in the `.env` file
 
+    
+    Option 2: Hardcoded MongoDB URL
+
+    If you are not using a `.env` file, you can directly add your MongoDB connection string in the code.
+
+    File: `src/cloud_io/__init__.py`
+
+   Replace:
+
+   ```python
+   mongo_db_url = os.getenv(MONGODB_URL_KEY)
+   ```
+   With:
+   ```python
+   mongo_db_url = "your_mongodb_connection_string"
+     ```
+
 4. Run the Streamlit application:
    ```bash
    streamlit run app.py
