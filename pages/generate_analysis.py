@@ -7,7 +7,6 @@ from src.data_report.generate_data_report import DashboardGenerator
 
 mongo_con = MongoIO()
 
-
 def create_analysis_page(review_data: pd.DataFrame):
     if review_data is not None:
 
@@ -20,8 +19,6 @@ def create_analysis_page(review_data: pd.DataFrame):
 
             # Display product-specific sections
             dashboard.display_product_sections()
-
-
 try:
 
     if st.session_state.data:
@@ -36,4 +33,3 @@ try:
 except AttributeError:
     product_name = None
     st.markdown(""" # No Data Available for analysis.""")
-

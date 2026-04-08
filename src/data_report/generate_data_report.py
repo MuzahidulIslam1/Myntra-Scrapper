@@ -6,7 +6,6 @@ import plotly.graph_objects as go
 import os, sys
 from src.exception import CustomException
 
-
 class DashboardGenerator:
     def __init__(self, data):
         self.data = data
@@ -40,7 +39,6 @@ class DashboardGenerator:
 
     def display_product_sections(self):
         st.header('Product Sections')
-
         product_names = self.data['Product Name'].unique()
         columns = st.columns(len(product_names))
 
@@ -57,7 +55,6 @@ class DashboardGenerator:
                 # Display average rating
                 avg_rating = product_data['Over_All_Rating'].mean()
                 st.markdown(f"⭐ Average Rating: {avg_rating:.2f}")
-
                 # Display top positive comments with great ratings
                 positive_reviews = product_data[product_data['Rating'] >= 4.5].nlargest(5, 'Rating')
                 st.subheader('Positive Reviews')

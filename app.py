@@ -6,13 +6,10 @@ from src.scrapper.scrape import ScrapeReviews
 
 st.set_page_config(
     "myntra-review-scrapper"
-
 )
 
 st.title("Myntra Review Scrapper")
 st.session_state["data"] = False
-
-
 
 
 
