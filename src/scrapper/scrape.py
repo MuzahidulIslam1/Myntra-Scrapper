@@ -9,7 +9,6 @@ import time
 from selenium.webdriver.chrome.options import Options
 from urllib.parse import quote
 
-
 class ScrapeReviews:
     def __init__(self,
                  product_name:str,

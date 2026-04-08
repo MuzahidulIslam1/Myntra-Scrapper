@@ -8,7 +8,6 @@ def error_message_detail(error, error_detail):
 
     return error_message
 
-
 class CustomException(Exception):
     def __init__(self, error_message, error_detail):
         """
